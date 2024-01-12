@@ -1,5 +1,3 @@
-import styles from "./page.module.css";
-
 interface CategoryProps {
   params: {
     categories?: string;
@@ -14,8 +12,10 @@ export default function Category({
   searchParams,
 }: CategoryProps) {
   const search = searchParams?.search;
+  console.log(categories);
+  console.log(searchParams);
   return (
-    <div className={styles.main}>
+    <div>
       <h2>Category: {categories}</h2>
       {search && <p>Search: {search}</p>}
     </div>
