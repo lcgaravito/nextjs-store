@@ -1,9 +1,9 @@
 interface CategoryProps {
   params: {
-    categories?: string;
+    categories?: string[];
   };
   searchParams?: {
-    search?: string;
+    [key: string]: string;
   };
 }
 
